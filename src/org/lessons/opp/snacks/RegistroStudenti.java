@@ -8,4 +8,23 @@ public class RegistroStudenti {
 	public RegistroStudenti() {
 		studentRegister = new Studente[30]; // max 30 students
 	}
+	// addStudent method
+	public void addStudent(Studente student) {
+		for(int i = 0; i < studentRegister.length; i++) {
+			if (studentRegister[i] == null ) {
+				studentRegister[i] = student;
+				break;
+			}
+		}
+	}
+	// getStudentRegister
+	public void getStudentRegister() {
+        for (int i = 0; i < studentRegister.length; i++) {
+        	if (studentRegister[i] != null ) {
+            System.out.println(studentRegister[i].getStudentInfo());
+        	} else {
+        		break;
+        	}
+        }
+    }
 }
