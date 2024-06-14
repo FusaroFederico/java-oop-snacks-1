@@ -11,4 +11,14 @@ public class ContoBancario {
 		this.accountNumber = accountNumber;
 		this.accountBalance = 0.0d;
 	}
+	
+	// depositMoney method
+	public void depositMoney(double money) {
+		accountBalance += money;
+	}
+	
+	// withdrawMoney method
+		public void withdrawMoney(double money) {
+			accountBalance -= money;
+		}
 }
