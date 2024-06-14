@@ -21,4 +21,8 @@ public class ContoBancario {
 		public void withdrawMoney(double money) {
 			accountBalance -= money;
 		}
+	// getAccountBalance
+		public double getAccountBalance() {
+			return accountBalance;
+		}
 }
