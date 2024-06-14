@@ -17,4 +17,29 @@ public class Studente {
 	public String getStudentInfo() {
 		return firstName + " " + lastName + ", " + age + " anni";
 	}
+	
+	// Getters and Setters
+	public String getFirstName() {
+		return firstName;
+	}
+
+	private void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	private void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	private void setAge(int age) {
+		this.age = age;
+	}
 }
