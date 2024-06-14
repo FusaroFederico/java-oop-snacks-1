@@ -12,4 +12,9 @@ public class Studente {
 		this.lastName = lastName;
 		this.age = age;
 	}
+	
+	// getStudentInfo method
+	public String getStudentInfo() {
+		return firstName + " " + lastName + ", " + age + " anni";
+	}
 }
