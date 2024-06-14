@@ -6,9 +6,10 @@ public class Studente {
 	private String lastName;
 	private int age;
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	// constructor method
+	public Studente(String firstName, String lastName, int age) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
 	}
-
 }
