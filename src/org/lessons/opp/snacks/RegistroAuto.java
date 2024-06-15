@@ -13,4 +13,10 @@ public class RegistroAuto {
 		carRegister[counter] = car;
 		counter ++;
 	}
+	// getCarList
+	public void getCarList() {
+		for(int i = 0; i < (counter + 1); i++) {
+			System.out.println(carRegister[i]);
+		}
+	}
 }
