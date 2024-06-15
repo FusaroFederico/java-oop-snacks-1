@@ -15,8 +15,9 @@ public class RegistroAuto {
 	}
 	// getCarList
 	public void getCarList() {
-		for(int i = 0; i < (counter + 1); i++) {
-			System.out.println(carRegister[i]);
+		for(int i = 0; i <= counter; i++) {
+			System.out.println(carRegister[i].getCarBrand() + " " + carRegister[i].getCarModel() + " " +
+					carRegister[i].getCarYear() + " " + carRegister[i].getCarHP() + " Hp");
 		}
 	}
 }
