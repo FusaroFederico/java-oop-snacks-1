@@ -10,8 +10,17 @@ public class HashSetUtils {
 		if (set1.size() != set2.size()) {
             return false;
         }
-		for (String element : set1) {
-			if (!set2.contains(element)) {
+		for (String element1 : set1) {
+			//if (!set2.contains(element)) {
+				//return false;
+			//}
+			boolean isContained = false;
+			for (String element2 : set2) {
+				if (element2.equals(element1)) {
+					isContained = true;
+				}
+			}
+			if (!isContained) {
 				return false;
 			}
 		}
